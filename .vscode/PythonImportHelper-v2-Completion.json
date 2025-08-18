@@ -1,0 +1,440 @@
+[
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "Shape",
+        "kind": 6,
+        "importPath": "pillars of oop.py.abstract",
+        "description": "pillars of oop.py.abstract",
+        "peekOfCode": "class Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\nclass Rectangle(Shape):\n    def area(self):\n        print(\"Calculating area of Rectangle\")",
+        "detail": "pillars of oop.py.abstract",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "pillars of oop.py.abstract",
+        "description": "pillars of oop.py.abstract",
+        "peekOfCode": "class Rectangle(Shape):\n    def area(self):\n        print(\"Calculating area of Rectangle\")",
+        "detail": "pillars of oop.py.abstract",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 6,
+        "importPath": "pillars of oop.py.class",
+        "description": "pillars of oop.py.class",
+        "peekOfCode": "class A:\n    def __inti__(self, name, age):\n       self._name=name\n       self.age=age\n    # def get_name(self):\n    #     get._name=name\nclass B(A):\n    def into(self):\n           print(f\"am  {self._name} is {self.age}\") \nobj=A(\"samia\", 20)",
+        "detail": "pillars of oop.py.class",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "kind": 6,
+        "importPath": "pillars of oop.py.class",
+        "description": "pillars of oop.py.class",
+        "peekOfCode": "class B(A):\n    def into(self):\n           print(f\"am  {self._name} is {self.age}\") \nobj=A(\"samia\", 20)\nobj.into()",
+        "detail": "pillars of oop.py.class",
+        "documentation": {}
+    },
+    {
+        "label": "Test",
+        "kind": 6,
+        "importPath": "pillars of oop.py.correct",
+        "description": "pillars of oop.py.correct",
+        "peekOfCode": "class Test:\n    def _init_(self, value):\n        self.value = value\n    def add(self, num):\n        self.value += num\n        return self\n    def display(self):\n        print(self.value)\n        return self\nobj = Test(5)",
+        "detail": "pillars of oop.py.correct",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "pillars of oop.py.correct",
+        "description": "pillars of oop.py.correct",
+        "peekOfCode": "obj = Test(5)\nobj.add(10).display().add(5).display()",
+        "detail": "pillars of oop.py.correct",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "pillars of oop.py.eccormerc",
+        "description": "pillars of oop.py.eccormerc",
+        "peekOfCode": "class Product:\n    def __init__(self, name, category, price, stock):\n        self.name = name\n        self.category = category\n        self.price = price\n        self.stock = stock\n    def reduce_stock(self, quantity):\n        if self.stock >= quantity:\n            self.stock -= quantity\n            print(f\"Sold {quantity} {self.name}(s). Remaining stock: {self.stock}\")",
+        "detail": "pillars of oop.py.eccormerc",
+        "documentation": {}
+    },
+    {
+        "label": "Electronics",
+        "kind": 6,
+        "importPath": "pillars of oop.py.eccormerc",
+        "description": "pillars of oop.py.eccormerc",
+        "peekOfCode": "class Electronics(Product):\n    def __init__(self, name, category, price, stock,warranty_period):\n        super().__init__(name, category, price, stock)\n        self.warranty_period =warranty_period\n    def display_warrranty(self):\nproduct1 = Product(\"Laptop\", \"Electronics\", 1200, 10)\nproduct1.availability()\nproduct1.reduce_stock(5)\nproduct1.add_stock(4)\nproduct1.discount(1000,40)",
+        "detail": "pillars of oop.py.eccormerc",
+        "documentation": {}
+    },
+    {
+        "label": "product1",
+        "kind": 5,
+        "importPath": "pillars of oop.py.eccormerc",
+        "description": "pillars of oop.py.eccormerc",
+        "peekOfCode": "product1 = Product(\"Laptop\", \"Electronics\", 1200, 10)\nproduct1.availability()\nproduct1.reduce_stock(5)\nproduct1.add_stock(4)\nproduct1.discount(1000,40)\nproduct1.availability()",
+        "detail": "pillars of oop.py.eccormerc",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "pillars of oop.py.encapsulation",
+        "description": "pillars of oop.py.encapsulation",
+        "peekOfCode": "class Person:\n    def __init__(self, name, age):\n        self.__name = name  # private attribute\n        self.__age = age    # private attribute\n        #  accessor\n    def get_name(self): \n        return self.__name\n        # print \"{self.__name}\"\n        # mutator\n    def set_name(self, name):",
+        "detail": "pillars of oop.py.encapsulation",
+        "documentation": {}
+    },
+    {
+        "label": "Shape",
+        "kind": 6,
+        "importPath": "pillars of oop.py.polymoprhism",
+        "description": "pillars of oop.py.polymoprhism",
+        "peekOfCode": "class Shape:\n    def area(self):\n        pass\nclass Circle(Shape):\n    def area(self):\n        print(\"Calculating area of Circle\")\nclass Square(Shape):\n    def area(self):\n        print(\"Calculating area of Square\")",
+        "detail": "pillars of oop.py.polymoprhism",
+        "documentation": {}
+    },
+    {
+        "label": "Circle",
+        "kind": 6,
+        "importPath": "pillars of oop.py.polymoprhism",
+        "description": "pillars of oop.py.polymoprhism",
+        "peekOfCode": "class Circle(Shape):\n    def area(self):\n        print(\"Calculating area of Circle\")\nclass Square(Shape):\n    def area(self):\n        print(\"Calculating area of Square\")",
+        "detail": "pillars of oop.py.polymoprhism",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "pillars of oop.py.polymoprhism",
+        "description": "pillars of oop.py.polymoprhism",
+        "peekOfCode": "class Square(Shape):\n    def area(self):\n        print(\"Calculating area of Square\")",
+        "detail": "pillars of oop.py.polymoprhism",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "pillars of oop.py.scenario4",
+        "description": "pillars of oop.py.scenario4",
+        "peekOfCode": "class Car:\n    def __init__(self,make ,model,year ,is_rented=False):\n        self.make=make\n        self.model=model\n        self.year=year\n        self.is_rented=is_rented\n    def display(self):\n        print(f\"the car is {self.make} {self.model} of {self.year} \")\n        if  self.is_rented:\n                print(f'{self.make}, {self.model} is not available')",
+        "detail": "pillars of oop.py.scenario4",
+        "documentation": {}
+    },
+    {
+        "label": "Manager",
+        "kind": 6,
+        "importPath": "pillars of oop.py.senari2",
+        "description": "pillars of oop.py.senari2",
+        "peekOfCode": "class Manager:\n    def __init__(self, name, position, salary):\n        self.name=name\n        self.position=position\n        self.salary=salary\n    def update_salary(self,new_salary):\n        self.salary=new_salary\n        print(f\"{self.name} new salary is {new_salary}\")\n    def display(self):\n        print(f\"{self.position} {self.name} your salary is {self.salary}\")",
+        "detail": "pillars of oop.py.senari2",
+        "documentation": {}
+    },
+    {
+        "label": "Bank",
+        "kind": 6,
+        "importPath": "pillars of oop.py.senario",
+        "description": "pillars of oop.py.senario",
+        "peekOfCode": "class Bank:\n    def __init__(self, name,amount):\n        self.name=name\n        self.amount=amount\n    def deposit(self, deposited_amount):\n        if 0<deposited_amount:\n            self.amount +=deposited_amount\n            print(f\"{deposited_amount}Tsh is added {self.name}, the new balance is {self.amount}\")\n        else:\n            print('no amount deposited')",
+        "detail": "pillars of oop.py.senario",
+        "documentation": {}
+    },
+    {
+        "label": "Library",
+        "kind": 6,
+        "importPath": "pillars of oop.py.senario3",
+        "description": "pillars of oop.py.senario3",
+        "peekOfCode": "class Library:\n    books = {}\n    def __init__(self, book_name, author, issue_date=None):\n        self.book_name = book_name\n        self.author = author\n        self.issue_date = issue_date\n        Library.books[book_name] = {'author': author, 'issued': False, 'issue_date': None}\n    def check_book(self):\n        if self.book_name in Library.books:\n            print(f\"{self.book_name} is in the library.\")",
+        "detail": "pillars of oop.py.senario3",
+        "documentation": {}
+    },
+    {
+        "label": "obj1",
+        "kind": 5,
+        "importPath": "pillars of oop.py.senario3",
+        "description": "pillars of oop.py.senario3",
+        "peekOfCode": "obj1 = Library(\"Mabala\", \"Nyamabali\", 4/2/2025)\nobj1.check_book()\nobj1.issue()\nobj1.return_book()\nobj2 = Library(\"MABALA\", 'NYAMBALI')\nobj2.issue()",
+        "detail": "pillars of oop.py.senario3",
+        "documentation": {}
+    },
+    {
+        "label": "obj2",
+        "kind": 5,
+        "importPath": "pillars of oop.py.senario3",
+        "description": "pillars of oop.py.senario3",
+        "peekOfCode": "obj2 = Library(\"MABALA\", 'NYAMBALI')\nobj2.issue()",
+        "detail": "pillars of oop.py.senario3",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "pillars of oop.py.senario5",
+        "description": "pillars of oop.py.senario5",
+        "peekOfCode": "class Car:\n    def __init__(self,make ,model,year ,is_rented=False):\n        self.make=make\n        self.model=model\n        self.year=year\n        self.is_rented=is_rented\n    def display(self):\n        print(f\"the car is {self.make} {self.model} of {self.year}  \")\n        if  self.is_rented:\n            print(f'{self.make}, {self.model} is not available')",
+        "detail": "pillars of oop.py.senario5",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "pillars of oop.py.test",
+        "description": "pillars of oop.py.test",
+        "peekOfCode": "class Car:\n    def __init__(self, model, horsepower):\n        self.model = model\n        self.engine = Engine(horsepower)  # Composition: Car HAS-A Engine\n    def start_car(self):\n        print(f\"{self.model} is starting...\")\n        self.engine.start()\n# Usage\nmy_car = Car(\"Tesla Model 3\", 250)\nmy_car.start_car()",
+        "detail": "pillars of oop.py.test",
+        "documentation": {}
+    },
+    {
+        "label": "my_car",
+        "kind": 5,
+        "importPath": "pillars of oop.py.test",
+        "description": "pillars of oop.py.test",
+        "peekOfCode": "my_car = Car(\"Tesla Model 3\", 250)\nmy_car.start_car()",
+        "detail": "pillars of oop.py.test",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "area",
+        "description": "area",
+        "peekOfCode": "class Rectangle:\n    def __init__(self ,length,width):\n        self.a=length\n        self.b=width\nobj=Rectangle(20,10)\nprint(\"Area of a rectangle is\", obj.a*obj.b)\nprint(\"peremeter of rectangle is\" ,obj.a+obj.b)    \n#   calculating triangle\nh=float(input(\"enter height: \"))\nb=float(input(\"enter base: \"))",
+        "detail": "area",
+        "documentation": {}
+    },
+    {
+        "label": "Cycle",
+        "kind": 6,
+        "importPath": "area",
+        "description": "area",
+        "peekOfCode": "class Cycle:\n    def __init__(self,side):\n        self.x=side\nobj=Cycle(5)\nprint((obj.x)**2)\n        # calculating cycle\nimport math\nx=float(input(\"Enter radius: \"))\ny= math.pi*(x**2)\nprint(y,\"is area of circle\")",
+        "detail": "area",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "construction",
+        "description": "construction",
+        "peekOfCode": "class Node:\n    def __init__(self,value):\n        self.value=value\n        self.next=None\nclass Linkedlist:\n    def __init__(self,value):\n         new_node=Node(value)\n         self.head=new_node\n         self.tail=new_node\n         self.length=1",
+        "detail": "construction",
+        "documentation": {}
+    },
+    {
+        "label": "Linkedlist",
+        "kind": 6,
+        "importPath": "construction",
+        "description": "construction",
+        "peekOfCode": "class Linkedlist:\n    def __init__(self,value):\n         new_node=Node(value)\n         self.head=new_node\n         self.tail=new_node\n         self.length=1\n    def printlist(self):\n        temp=self.head\n        while temp is not None:\n           print(temp.value)",
+        "detail": "construction",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "insert",
+        "description": "insert",
+        "peekOfCode": "class Node:\n    def __init__(self,value) :\n        self.value=value\n        self.next=None\nclass Linkedliat:\n    def __init__(self,value):\n        new_node=Node(value)\n        self.head=new_node\n        self.tail=new_node\n        self.length=1  ",
+        "detail": "insert",
+        "documentation": {}
+    },
+    {
+        "label": "Linkedliat",
+        "kind": 6,
+        "importPath": "insert",
+        "description": "insert",
+        "peekOfCode": "class Linkedliat:\n    def __init__(self,value):\n        new_node=Node(value)\n        self.head=new_node\n        self.tail=new_node\n        self.length=1  \n    def get(self,index):\n        if index<0 or index>=self.length:\n            return None\n        temp=self.head",
+        "detail": "insert",
+        "documentation": {}
+    },
+    {
+        "label": "Addition",
+        "kind": 6,
+        "importPath": "METHOD",
+        "description": "METHOD",
+        "peekOfCode": "class Addition:\n      def __init__(self, X, Y, Z):\n          self.X = X\n          self.Y = Y\n          self.Z = Z\ndef adition(self):\n    print(self.X + self.Y + self.Z)\na = Addition(2,5,6)              \na.adition()",
+        "detail": "METHOD",
+        "documentation": {}
+    },
+    {
+        "label": "adition",
+        "kind": 2,
+        "importPath": "METHOD",
+        "description": "METHOD",
+        "peekOfCode": "def adition(self):\n    print(self.X + self.Y + self.Z)\na = Addition(2,5,6)              \na.adition()",
+        "detail": "METHOD",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "METHOD",
+        "description": "METHOD",
+        "peekOfCode": "a = Addition(2,5,6)              \na.adition()",
+        "detail": "METHOD",
+        "documentation": {}
+    },
+    {
+        "label": "tuple1",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "tuple1 = (1, 2, 3)\ntuple2 = (4, 5, 6)\n# Concatenation\nresult = tuple1 + tuple2\nprint(\"Concatenation:\", result)  # Output: (1, 2, 3, 4, 5, 6)\n# Repetition\nresult = tuple1 * 2\nprint(\"Repetition:\", result)  # Output: (1, 2, 3, 1, 2, 3)\n# Membership\nprint(2 in tuple1)  # Output: True",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "tuple2",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "tuple2 = (4, 5, 6)\n# Concatenation\nresult = tuple1 + tuple2\nprint(\"Concatenation:\", result)  # Output: (1, 2, 3, 4, 5, 6)\n# Repetition\nresult = tuple1 * 2\nprint(\"Repetition:\", result)  # Output: (1, 2, 3, 1, 2, 3)\n# Membership\nprint(2 in tuple1)  # Output: True\nprint(4 not in tuple1)  # Output: True",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "result = tuple1 + tuple2\nprint(\"Concatenation:\", result)  # Output: (1, 2, 3, 4, 5, 6)\n# Repetition\nresult = tuple1 * 2\nprint(\"Repetition:\", result)  # Output: (1, 2, 3, 1, 2, 3)\n# Membership\nprint(2 in tuple1)  # Output: True\nprint(4 not in tuple1)  # Output: True\n# Length\nprint(\"Length:\", len(tuple1))  # Output: 3",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "result = tuple1 * 2\nprint(\"Repetition:\", result)  # Output: (1, 2, 3, 1, 2, 3)\n# Membership\nprint(2 in tuple1)  # Output: True\nprint(4 not in tuple1)  # Output: True\n# Length\nprint(\"Length:\", len(tuple1))  # Output: 3\nmy_tuple = (10, 20, 30, 40)\nmy_list = [10, 20, 30, 40]\n# Access elements by index",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "my_tuple",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "my_tuple = (10, 20, 30, 40)\nmy_list = [10, 20, 30, 40]\n# Access elements by index\nprint(my_tuple[0])  # Output: 10\nprint(my_list[1])   # Output: 20\n# Negative indexing\nprint(my_tuple[-1])  # Output: 40\nprint(my_list[-2])   # Output: 30\nmy_tuple = (10, 20, 30, 40, 50)\nmy_list = [10, 20, 30, 40, 50]",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "my_list = [10, 20, 30, 40]\n# Access elements by index\nprint(my_tuple[0])  # Output: 10\nprint(my_list[1])   # Output: 20\n# Negative indexing\nprint(my_tuple[-1])  # Output: 40\nprint(my_list[-2])   # Output: 30\nmy_tuple = (10, 20, 30, 40, 50)\nmy_list = [10, 20, 30, 40, 50]\n# Slicing: [start:end:step]",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "my_tuple",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "my_tuple = (10, 20, 30, 40, 50)\nmy_list = [10, 20, 30, 40, 50]\n# Slicing: [start:end:step]\nprint(my_tuple[1:4])  # Output: (20, 30, 40)\nprint(my_list[::2])   # Output: [10, 30, 50]\n# Negative slicing\nprint(my_tuple[-4:-1])  # Output: (20, 30, 40)\nprint(my_list[::-1])    # Output: [50, 40, 30, 20, 10]\n# List matrix\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "my_list = [10, 20, 30, 40, 50]\n# Slicing: [start:end:step]\nprint(my_tuple[1:4])  # Output: (20, 30, 40)\nprint(my_list[::2])   # Output: [10, 30, 50]\n# Negative slicing\nprint(my_tuple[-4:-1])  # Output: (20, 30, 40)\nprint(my_list[::-1])    # Output: [50, 40, 30, 20, 10]\n# List matrix\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n# Accessing elements",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n# Accessing elements\nprint(matrix[1][2])  # Output: 6 (2nd row, 3rd column)\n# Tuple-like structure matrix\ntuple_matrix = ((1, 2, 3), (4, 5, 6), (7, 8, 9))\nprint(tuple_matrix[0][1])  # Output: 2 (1st row, 2nd column)",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "tuple_matrix",
+        "kind": 5,
+        "importPath": "name",
+        "description": "name",
+        "peekOfCode": "tuple_matrix = ((1, 2, 3), (4, 5, 6), (7, 8, 9))\nprint(tuple_matrix[0][1])  # Output: 2 (1st row, 2nd column)",
+        "detail": "name",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "sam",
+        "description": "sam",
+        "peekOfCode": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n# Accessing elements\nprint(matrix[1][2])  # Output: 6 (2nd row, 3rd column)\n# Tuple-like structure matrix\ntuple_matrix = ((1, 2, 3), (4, 5, 6), (7, 8, 9))\nprint(tuple_matrix[0][1])  # Output: 2 (1st row, 2nd column)\nmy_tuple = (10, 20, 30, 10, 40)\n# 1. `len()`: Get the length of the tuple\nprint(len(my_tuple))  # Output: 5\n# 2. `max()`: Find the maximum value",
+        "detail": "sam",
+        "documentation": {}
+    },
+    {
+        "label": "tuple_matrix",
+        "kind": 5,
+        "importPath": "sam",
+        "description": "sam",
+        "peekOfCode": "tuple_matrix = ((1, 2, 3), (4, 5, 6), (7, 8, 9))\nprint(tuple_matrix[0][1])  # Output: 2 (1st row, 2nd column)\nmy_tuple = (10, 20, 30, 10, 40)\n# 1. `len()`: Get the length of the tuple\nprint(len(my_tuple))  # Output: 5\n# 2. `max()`: Find the maximum value\nprint(max(my_tuple))  # Output: 40\n# 3. `min()`: Find the minimum value\nprint(min(my_tuple))  # Output: 10\n# 4. `sum()`: Sum all elements",
+        "detail": "sam",
+        "documentation": {}
+    },
+    {
+        "label": "my_tuple",
+        "kind": 5,
+        "importPath": "sam",
+        "description": "sam",
+        "peekOfCode": "my_tuple = (10, 20, 30, 10, 40)\n# 1. `len()`: Get the length of the tuple\nprint(len(my_tuple))  # Output: 5\n# 2. `max()`: Find the maximum value\nprint(max(my_tuple))  # Output: 40\n# 3. `min()`: Find the minimum value\nprint(min(my_tuple))  # Output: 10\n# 4. `sum()`: Sum all elements\nprint(sum(my_tuple))  # Output: 110\n# 5. `count()`: Count the occurrences of a value",
+        "detail": "sam",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "sam",
+        "description": "sam",
+        "peekOfCode": "my_list = [1, 2, 3]\nprint(tuple(my_list))  # Output: (1, 2, 3)",
+        "detail": "sam",
+        "documentation": {}
+    }
+]
